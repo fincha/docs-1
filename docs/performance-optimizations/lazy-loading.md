@@ -96,7 +96,7 @@ In the following sections, we will create a simple Angular application using the
     ```TypeScript
     // app/app.routing.ts
     import { NgModule } from "@angular/core";
-    import { NativeScriptRouterModule } from "nativescript-angular/router";
+    import { NativeScriptRouterModule } from '@nativescript/angular';
     import { Routes } from "@angular/router";
 
     import { ItemsComponent } from "./item/items.component";
@@ -115,6 +115,8 @@ In the following sections, we will create a simple Angular application using the
     })
     export class AppRoutingModule { }
     ```
+    
+    *IMPORTANT: do not import the lazy loaded module somewhere else in your application!*
 
 
 -  Navigating to lazily loaded module
